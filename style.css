@@ -1,0 +1,39 @@
+body{
+    font-family: Arial;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+h1{
+    text-align:center;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    background:green;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.company-card{
+    margin-top:15px;
+    padding:10px;
+    border:1px solid gray;
+}
