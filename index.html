@@ -1,36 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Placement Tracker</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Placement Tracker</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <h1>Placement Tracker</h1>
+<h1>📌 Placement Tracker</h1>
 
-        <input type="text" id="company" placeholder="Company Name">
+<div class="stats">
+<div class="card">
+<h3 id="appliedCount">0</h3>
+<p>Applied</p>
+</div>
 
-        <input type="number" id="package" placeholder="Package (LPA)">
+<div class="card">
+<h3 id="interviewCount">0</h3>
+<p>Interview</p>
+</div>
 
-        <select id="status">
-            <option>Applied</option>
-            <option>OA Cleared</option>
-            <option>Interview</option>
-            <option>Selected</option>
-            <option>Rejected</option>
-        </select>
+<div class="card">
+<h3 id="selectedCount">0</h3>
+<p>Selected</p>
+</div>
 
-        <button onclick="addCompany()">
-            Add Company
-        </button>
+<div class="card">
+<h3 id="rejectedCount">0</h3>
+<p>Rejected</p>
+</div>
+</div>
 
-        <div id="companyList"></div>
+<input type="text" id="search" placeholder="🔍 Search Company">
 
-    </div>
+<input type="text" id="company" placeholder="Company Name">
 
-    <script src="script.js"></script>
+<input type="number" id="package" placeholder="Package (LPA)">
 
+<select id="status">
+<option>Applied</option>
+<option>Interview</option>
+<option>Selected</option>
+<option>Rejected</option>
+</select>
+
+<button onclick="addCompany()">Add Company</button>
+
+<div id="companyList"></div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
-  </html>
+</html>
