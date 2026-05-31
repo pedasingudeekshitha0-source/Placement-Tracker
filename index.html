@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Placement Tracker</h1>
+
+        <input type="text" id="company" placeholder="Company Name">
+
+        <input type="number" id="package" placeholder="Package (LPA)">
+
+        <select id="status">
+            <option>Applied</option>
+            <option>OA Cleared</option>
+            <option>Interview</option>
+            <option>Selected</option>
+            <option>Rejected</option>
+        </select>
+
+        <button onclick="addCompany()">
+            Add Company
+        </button>
+
+        <div id="companyList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+  </html>
