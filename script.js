@@ -6,6 +6,7 @@ localStorage.getItem("companies")
 displayCompanies();
 
 function addCompany(){
+let currentFilter = "All";
 
 let companyName =
 document.getElementById("company").value;
