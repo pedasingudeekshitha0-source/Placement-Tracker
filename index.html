@@ -13,6 +13,7 @@
 <h1>📌 Placement Tracker</h1>
 
 <div class="stats">
+
 <div class="card">
 <h3 id="appliedCount">0</h3>
 <p>Applied</p>
@@ -32,13 +33,28 @@
 <h3 id="rejectedCount">0</h3>
 <p>Rejected</p>
 </div>
+
+<div class="card success-card">
+<h3 id="successRate">0%</h3>
+<p>Success Rate</p>
 </div>
 
-<input type="text" id="search" placeholder="🔍 Search Company">
+</div>
 
-<input type="text" id="company" placeholder="Company Name">
+<input
+type="text"
+id="search"
+placeholder="🔍 Search Company">
 
-<input type="number" id="package" placeholder="Package (LPA)">
+<input
+type="text"
+id="company"
+placeholder="Company Name">
+
+<input
+type="number"
+id="package"
+placeholder="Package (LPA)">
 
 <select id="status">
 <option>Applied</option>
@@ -47,12 +63,19 @@
 <option>Rejected</option>
 </select>
 
-<button onclick="addCompany()">Add Company</button>
+<button onclick="addCompany()">
+Add Company
+</button>
+
+<button onclick="sortCompanies()">
+Sort By Package
+</button>
 
 <div id="companyList"></div>
 
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
