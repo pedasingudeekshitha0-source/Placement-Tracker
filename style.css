@@ -102,3 +102,16 @@ margin-top:10px;
 background:#d63031;
 margin-top:10px;
 }
+
+.filters{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:5px;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.filters button{
+font-size:12px;
+padding:8px;
+}
