@@ -3,15 +3,17 @@ font-family:Arial,sans-serif;
 background:#121212;
 color:white;
 padding:20px;
+margin:0;
 }
 
 .container{
-max-width:800px;
+max-width:900px;
 margin:auto;
 }
 
 h1{
 text-align:center;
+margin-bottom:20px;
 }
 
 .stats{
@@ -26,14 +28,21 @@ background:#1e1e1e;
 padding:15px;
 border-radius:10px;
 text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
 }
 
-input,select{
+.success-card{
+grid-column:span 2;
+}
+
+input,
+select{
 width:100%;
 padding:12px;
 margin-top:10px;
 border:none;
-border-radius:6px;
+border-radius:8px;
+box-sizing:border-box;
 }
 
 button{
@@ -43,8 +52,13 @@ margin-top:10px;
 background:#00b894;
 color:white;
 border:none;
-border-radius:6px;
+border-radius:8px;
 cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+opacity:0.9;
 }
 
 .company-card{
@@ -52,10 +66,11 @@ background:#1e1e1e;
 padding:15px;
 margin-top:15px;
 border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
 }
 
 .badge{
-padding:5px 10px;
+padding:6px 12px;
 border-radius:20px;
 font-size:12px;
 font-weight:bold;
@@ -78,7 +93,12 @@ background:#00b894;
 background:#d63031;
 }
 
+.edit-btn{
+background:#0984e3;
+margin-top:10px;
+}
+
 .delete-btn{
-background:red;
+background:#d63031;
 margin-top:10px;
 }
